@@ -42,13 +42,6 @@ A modern, responsive personal website showcasing web development skills, project
 - **Accessibility**: Semantic HTML, proper labels, focus states
 - **Animations**: Smooth transitions and hover effects
 
-### GitHub Repository
-
-1. Create a new repository on GitHub
-2. Upload all project files
-3. Include the GitHub repository link in your HTML website
-4. Share the repository with your instructor and GA
-
 ## 🛠️ Technical Details
 
 ### Technologies Used
