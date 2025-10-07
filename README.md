@@ -1,6 +1,6 @@
 # Gaializ Mejias Gonzalez - Personal Website
 
-A modern, responsive personal website showcasing web development skills, projects, and professional experience. Built with pure HTML5 and CSS3, featuring HTML5 form validation and accessibility best practices.
+A modern, responsive personal website showcasing web development skills, projects, and professional experience. Built with HTML5 CSS3 and minimal JS, featuring HTML5 form validation and accessibility best practices.
  
 **📁 Repository**: [GitHub Repository](https://github.com/Gaializm/aidd-assignment-5)
 
@@ -47,7 +47,7 @@ A modern, responsive personal website showcasing web development skills, project
 ### Technologies Used
 - **HTML5**: Semantic markup with accessibility features and built-in form validation
 - **CSS3**: Custom properties, Grid, Flexbox, responsive design
-- **No JavaScript**: Pure static website using HTML5 form validation
+- **Minimal JavaScript**: Used only for password confirmation validation (HTML5 cannot validate password matching)
 - **Google Fonts**: Inter font family
 
 ### Browser Support
@@ -57,7 +57,7 @@ A modern, responsive personal website showcasing web development skills, project
 
 ### Performance
 - Optimized images and CSS
-- No JavaScript dependencies for fast loading
+- Minimal JavaScript (only for password validation)
 - Efficient CSS with custom properties
 - Responsive images with proper sizing
 

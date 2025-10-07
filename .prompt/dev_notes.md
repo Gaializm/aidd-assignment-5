@@ -134,14 +134,14 @@ QUALITY / CHECKS (ALIGN TO ASSIGNMENT)
 
 ---
 
-### Entry 3: JavaScript Removal and HTML5-Only Validation Part 2
+### Entry 3: Heavy JavaScript Removal and HTML5-Only Validation Part 2
 **Prompt**: "The html validation still lets me submit without populating any error messages, help me fix that?"
 
 **AI Output Summary**: The AI identified that the form validation wasn't working because the `novalidate` attribute was preventing browser validation, and the form was using `method="get"` which can bypass some validation. The AI removed the `novalidate` attribute, added `pattern` attributes for better validation (names must be letters only, passwords must be at least 8 characters), added descriptive `title` attributes for better error messages, and enhanced CSS validation styling to show visual feedback. The AI also added form-level validation styling to disable the submit button when the form is invalid.
 
 **Accepted/Modified/Rejected**: **Accepted** - The AI correctly identified the root cause of the validation issue and implemented a comprehensive solution using pure HTML5 validation attributes and CSS styling. The form now properly validates all fields and shows browser-native error messages.
 
-**Why**: The AI demonstrated good debugging skills by identifying that the `novalidate` attribute was the main issue preventing validation from working. The solution maintains the static HTML/CSS requirement while providing robust form validation through HTML5 attributes and visual feedback through CSS.
+**Why**: The AI demonstrated good debugging skills by identifying that the `novalidate` attribute was the main issue preventing validation from working. The solution maintains the static HTML/CSS requirement while providing robust form validation through HTML5 attributes and visual feedback through CSS. However, I later discovered that HTML5 cannot validate password matching, so I had to add minimal JavaScript back to the contact form for password confirmation validation, demonstrating the limitations of pure HTML5 validation.
 
 ## Reflection on AI Assistance
 

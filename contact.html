@@ -55,7 +55,8 @@
 
                     <div class="contact-form-section">
                         <h2>Send a Message</h2>
-                        <form id="contactForm" class="contact-form" action="thankyou.html" method="get">
+                        <p class="form-note"><em>Note: This is a demo form. Data is not actually submitted to a server.</em></p>
+                        <form id="contactForm" class="contact-form" action="thankyou.html" method="post">
                             <div class="form-group">
                                 <label for="firstName">First Name *</label>
                                 <input type="text" id="firstName" name="firstName" required pattern="[A-Za-z\s]+" title="Please enter a valid first name (letters only)">
@@ -101,5 +102,34 @@
         </div>
     </footer>
 
+    <script>
+        // Wait for DOM to be fully loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('contactForm');
+            const password = document.getElementById('password');
+            const confirmPassword = document.getElementById('confirmPassword');
+            
+            // Function to validate password match
+            function validatePasswordMatch() {
+                if (password.value !== confirmPassword.value) {
+                    confirmPassword.setCustomValidity('Passwords must match');
+                } else {
+                    confirmPassword.setCustomValidity('');
+                }
+            }
+            
+            // Add event listeners for real-time validation
+            password.addEventListener('input', validatePasswordMatch);
+            confirmPassword.addEventListener('input', validatePasswordMatch);
+            
+            // Validate on form submit
+            form.addEventListener('submit', function(e) {
+                validatePasswordMatch();
+                if (!form.checkValidity()) {
+                    e.preventDefault();
+                }
+            });
+        });
+    </script>
 </body>
 </html>
