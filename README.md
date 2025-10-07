@@ -1,6 +1,9 @@
-# Gaia Mejias - Personal Website
+# Gaializ Mejias Gonzalez - Personal Website
 
-A modern, responsive personal website showcasing web development skills, projects, and professional experience.
+A modern, responsive personal website showcasing web development skills, projects, and professional experience. Built with pure HTML5 and CSS3, featuring HTML5 form validation and accessibility best practices.
+
+**🔗 Live Demo**: [View Website](https://gaializm.github.io/aidd-assignment-5/)  
+**📁 Repository**: [GitHub Repository](https://github.com/Gaializm/aidd-assignment-5)
 
 ## 🚀 Quick Start
 
